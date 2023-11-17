@@ -1,5 +1,5 @@
 //create length function
-let word = "names"
+let word = "names";
 let index = 0;
 let length = 0; 
 function varLength(){
@@ -14,3 +14,4 @@ varLength(word);
 console.log(length);
 
 //create slice() function
+let fruits = "apple, lemon, orange, grape, watermelon";
