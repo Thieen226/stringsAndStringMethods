@@ -14,4 +14,26 @@ varLength(word);
 console.log(length);
 
 //create slice() function
-let fruits = "apple, lemon, orange, grape, watermelon";
+let fruits = "homework";
+
+//create a empty array to contain the string after slicing
+let slicedFruits = [];
+function slice(start, end){
+    //create a for loop to check through the string
+    for(let i = 0; i < fruits.length; i++){
+
+        //set fruits[start] equals to the index you start slicing
+        fruits[start] = fruits[i];
+        slicedFruits.push(fruits[start]);
+
+        //set fruits[end] equals to the index you want to stop slicing
+        fruits[end] = fruits[i];
+        slicedFruits.push(fruits[end]);
+    }
+    return slicedFruits;
+}
+console.log(slice(0, 3));
+
+
+
+
