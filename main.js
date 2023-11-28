@@ -16,7 +16,7 @@ console.log(length);
 
 //create slice() function
 let words = "homework";
-//create a empty string to contain the string after slicing
+//create an empty string to hold the letters after slicing
 let slicedWords = "";
 function slice(start, end){
     //create a for loop to put the letters into new string
@@ -29,7 +29,12 @@ console.log(slice(3, 8));
 
 
 //create replace() function
-let 
+let fullName = "Thien Ho";
+//create an empty string to hold new variable after replacing
+let newName = "";
+ function replace(a, b){
+ }
+
 
 
 
