@@ -33,7 +33,25 @@ let fullName = "Thien Ho";
 //create an empty string to hold new variable after replacing
 let newName = "";
  function replace(a, b){
+    for(let i = 0; i < fullName.length; i++){
+        if(fullName[i] === a){
+            index = i;
+        }
+        break;
+    }
+    for(let i = 0; i < fullName.length; i++){
+        if(i = index){
+            newName += b;
+        }
+        else{
+            newName += fullName[i];
+        }
+    }
+    console.log(newName);
  }
+ replace("T", "M");
+ 
+
 
 
 
