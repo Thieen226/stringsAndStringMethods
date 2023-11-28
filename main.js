@@ -15,17 +15,21 @@ console.log(length);
 
 
 //create slice() function
-let fruits = "homework";
+let words = "homework";
 //create a empty string to contain the string after slicing
-let slicedFruits = "";
+let slicedWords = "";
 function slice(start, end){
     //create a for loop to put the letters into new string
     for(let i = start; i < end; i++){
-        slicedFruits += fruits[i];
+        slicedWords += words[i];
     }
-    return slicedFruits;
+    return slicedWords;
 }
 console.log(slice(3, 8));
+
+
+//create replace() function
+let 
 
 
 
