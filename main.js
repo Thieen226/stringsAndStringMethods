@@ -81,11 +81,26 @@ console.log(replaceAll("States", "Kingdom"));
 
 
 //create concat() function
-let fruits = "apple, banana, kiwi";
-let drinks = "orange juice, coke, pepsi";
+let fruits = "apple, banana, kiwi, ";
+let drinks = "juice, coke, pepsi";
+let concatString = "";
 function concat(){
-    
+    //adding fruits string into concatString
+    for(let i = 0; i < fruits.length; i++){
+        concatString += fruits[i];
+    }
+    //adding drinks string into concatString after the first string
+    for(let i = 0; i < drinks.length; i++){
+        concatString += drinks[i];
+    }
 }
+concat();
+console.log(concatString);
+
+
+//create charAt() function
+let schoolName = "Yerba Buena High School";
+
 
 
 
