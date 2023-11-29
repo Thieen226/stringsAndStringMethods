@@ -32,27 +32,60 @@ console.log(slice(3, 8));
 let fullName = "Thien Ho";
 //create an empty string to hold new variable after replacing
 let newName = "";
- function replace(a, b){
+function replace(a, b){
     for(let i = 0; i < fullName.length; i++){
+        //check if the letter in the original string same as a
         if(fullName[i] === a){
+            //then index = the ith where the matching letter is
             index = i;
         }
         break;
     }
+
     for(let i = 0; i < fullName.length; i++){
-        if(i = index){
+        //check if i equals to the index of matching letter
+        if(i === index){
+            //then change it to new letter
             newName += b;
         }
         else{
+            //otherwise keep the rest
             newName += fullName[i];
         }
     }
-    console.log(newName);
+    return newName;
  }
- replace("T", "M");
- 
+ console.log(replace("T", "M"));
 
 
+ //create replaceAll() function 
+ let country = "The United States";
+ let newCountry = "";
+ function replaceAll(original, replacement){
+    for(let i = 0; i < original.length; i++){
+        if(original[0] === country[i]){
+            index = i;
+        }
+    }
+    for(let i = 0; i < country.length; i++){
+        if(index === i){
+            newCountry += replacement;
+        }
+        else{
+            newCountry += country[i];
+        }
+    }
+    return newCountry;
+}
+console.log(replaceAll("States", "Kingdom"));
+
+
+//create concat() function
+let fruits = "apple, banana, kiwi";
+let drinks = "orange juice, coke, pepsi";
+function concat(){
+    
+}
 
 
 
