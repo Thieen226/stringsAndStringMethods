@@ -59,16 +59,11 @@ function replace(a, b){
 
 
  //create replaceAll() function 
- let country = "The United States";
- let newCountry = "";
  function replaceAll(original, replacement){
-    for(let i = 0; i < original.length; i++){
-        if(original[0] === country[i]){
-            index = i;
-        }
-    }
+    let country = "The United States";
+    let newCountry = "";
     for(let i = 0; i < country.length; i++){
-        if(index === i){
+        if(country[i] === original){
             newCountry += replacement;
         }
         else{
@@ -100,7 +95,16 @@ console.log(concatString);
 
 //create charAt() function
 let schoolName = "Yerba Buena High School";
-
+function charAt(index){
+    for(let i = 0; i < schoolName.length; i++){
+        //if the ith of schoolName equals to the desired index 
+        if(i === index){
+            //return the letter of the ith 
+            return schoolName[i];
+        }
+    }
+}
+console.log(charAt(1));
 
 
 
