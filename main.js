@@ -99,7 +99,7 @@ function charAt(index){
     for(let i = 0; i < schoolName.length; i++){
         //if the ith of schoolName equals to the desired index 
         if(i === index){
-            //return the letter of the ith 
+            //return the ith letter
             return schoolName[i];
         }
     }
