@@ -72,7 +72,7 @@ function replace(a, b){
     }
     return newCountry;
 }
-console.log(replaceAll("States", "Kingdom"));
+console.log(replaceAll("e", "x"));
 
 
 //create concat() function
