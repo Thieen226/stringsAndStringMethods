@@ -63,16 +63,8 @@ function replace(a, b){
     let country = "The United States";
     let newCountry = "";
     for(let i = 0; i < country.length; i++){
-        //check if the letter in the original string same as a
-        if(country[i].toLowerCase === original){
-            //then index = the ith where the matching letter is
-            index = i;
-        }
-    }
-
-    for(let i = 0; i < country.length; i++){
-        //check if i equals to the index of matching letter
-        if(i === index){
+        //check if the letter in the country string same as the letter we want to change
+        if(country[i].toLowerCase() === original.toLowerCase()){
             //then change it to new letter
             newCountry += replacement;
         }
@@ -83,7 +75,7 @@ function replace(a, b){
     }
     return newCountry;
  }
- console.log(replaceAll("t", "s"));
+ console.log(replaceAll("t", "e"));
 
 //create concat() function
 let fruits = "apple, banana, kiwi, ";
